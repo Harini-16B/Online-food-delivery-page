@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Food Delivery</h1>
+    </header>
+    <main>
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <h3>Pizza</h3>
+                <p>Delicious cheese pizza with fresh toppings.</p>
+                <button onclick="addToCart('Pizza', 10)">Add to Cart - $10</button>
+            </div>
+            <div class="menu-item">
+                <h3>Burger</h3>
+                <p>Juicy beef burger with lettuce and tomato.</p>
+                <button onclick="addToCart('Burger', 8)">Add to Cart - $8</button>
+            </div>
+            <div class="menu-item">
+                <h3>Sushi</h3>
+                <p>Fresh sushi rolls with wasabi and ginger.</p>
+                <button onclick="addToCart('Sushi', 12)">Add to Cart - $12</button>
+            </div>
+        </section>
+        <section class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">Total: $0</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
